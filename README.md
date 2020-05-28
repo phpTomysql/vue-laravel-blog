@@ -79,6 +79,17 @@ Now we will have to run migration to setup database tables
 ```
 php artisan migrate
 ```
+After database tables migration done you can add dummy users & posts by laravel seeder.In this setup we have two seeder user & post that we can run for dummy records like below
+
+```
+php artisan db:seed --class=UserTableSeeder
+```
+
+&& for posts
+
+```
+php artisan db:seed --class=PostTableSeeder
+```
 
 That's it now everything is done time to run the laravel server so let's do it
 
